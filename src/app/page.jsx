@@ -10,6 +10,7 @@ import FeaturedMemesSection from "@/components/featuredMemesSection";
 import CreatorCard from "@/components/creatorCard";
 import CreatorsSection from "@/components/creatorsSection";
 import NewsletterSection from "@/components/newsletterSection";
+import EventCard from "@/components/eventCard";
 
 export default function Home() {
   // Array de dados dos memes para serem passados como props
@@ -191,13 +192,9 @@ export default function Home() {
         <div className={styles.contentArea}>
           <HeroSection />
           <CategoriesSection/>
-
           <Feed memes={memes} />
-
           <FeaturedMemesSection featuredMemes={featuredMemes}/>
-
           <CreatorsSection topCreators={topCreators} />
-          
           <NewsletterSection />
         </div>
 
@@ -206,16 +203,7 @@ export default function Home() {
           <div className={styles.sidebarSection}>
             <h3 className={styles.sidebarTitle}>Eventos Próximos</h3>
             {upcomingEvents.map((event) => (
-              // COMPONENTE: EventCard
-              <div key={event.id} className={styles.eventCard}>
-                <h4 className={styles.eventTitle}>{event.title}</h4>
-                <p className={styles.eventDate}>{event.date}</p>
-                <p className={styles.eventParticipants}>
-                  {event.participants} participantes
-                </p>
-                <button className={styles.eventButton}>Participar</button>
-              </div>
-              // FIM COMPONENTE: EventCard
+              <EventCard event={event} key={event.id} />
             ))}
           </div>
 
