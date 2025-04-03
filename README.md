@@ -1,5 +1,5 @@
 <div align='center'>
-<img src="https://www.inova.unicamp.br/wp-content/uploads/2021/05/SENAI-SP.jpg" width='100px' />
+    <img src="https://studiobiodivercidade.wordpress.com/wp-content/uploads/2016/04/logo-senai.jpg" width='100px' alt="logo SENAI />
 </div>
 
 <h1 align="center">Atividade Avaliativa - Componentização em React  </h1>
