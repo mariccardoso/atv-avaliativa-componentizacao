@@ -7,11 +7,11 @@ const HeroSection = () => {
         title: "Meme do Dia: Quando seu código funciona de primeira",
         description:
             "Este momento raro que todos os desenvolvedores sonham em experimentar!",
-        image: "https://i.imgur.com/vldGJnz.jpg",
+        image: "https://pt.quizur.com/_image?href=https://img.quizur.com/f/img5c22d768d51465.93685599.jpg?lastEdited=1545787246&w=600&h=600&f=webp",
         likes: 2452,
         comments: 387,
-        author: "SuperCoder",
-        authorAvatar: "https://i.pravatar.cc/150?img=20",
+        author: "MarianaDev",
+        authorAvatar: "https://avatars.githubusercontent.com/u/158165810?v=4",
     };
     return (
         <section className={styles.heroSection}>

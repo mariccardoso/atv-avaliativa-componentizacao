@@ -2,15 +2,10 @@ import Header from "@/components/header";
 import styles from "./page.module.css";
 import HeroSection from "@/components/heroSection";
 import CategoriesSection from "@/components/categoriesSection";
-import InteractionBar from "@/components/interactionBar";
-import MemeCard from "@/components/memeCard";
 import Feed from "@/components/feed";
-import FeaturedMemeCard from "@/components/featuredMemeCard";
 import FeaturedMemesSection from "@/components/featuredMemesSection";
-import CreatorCard from "@/components/creatorCard";
 import CreatorsSection from "@/components/creatorsSection";
 import NewsletterSection from "@/components/newsletterSection";
-import EventCard from "@/components/eventCard";
 import Sidebar from "@/components/sidebar";
 import Footer from "@/components/footer";
 
