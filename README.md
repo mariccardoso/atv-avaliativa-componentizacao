@@ -1,7 +1,10 @@
-<div align='center'><img src="https://www.inova.unicamp.br/wp-content/uploads/2021/05/SENAI-SP.jpg" width='100px' /></div>
+<div align='center'>
+<img src="https://www.inova.unicamp.br/wp-content/uploads/2021/05/SENAI-SP.jpg" width='100px' />
+</div>
+
 <h1 align="center">Atividade Avaliativa - Componentização em React  </h1>
 
-![alt text](image.png)
+![alt text](./public/image.png)
 
 ## ✨ MemeVerse
 Este projeto é uma aplicação React desenvolvida como parte de uma atividade avaliativa para o curso de Desenvolvimento de Sistemas do Senai Valinhos. O objetivo principal é demonstrar a capacidade de componentização e reutilização de código em uma aplicação React.
