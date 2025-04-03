@@ -188,14 +188,13 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <Header logo="MemeVerse"/>
-
+      <Header logo="MemeVerse" />
       <div className={styles.mainContent}>
         <div className={styles.contentArea}>
           <HeroSection />
-          <CategoriesSection/>
+          <CategoriesSection />
           <Feed memes={memes} />
-          <FeaturedMemesSection featuredMemes={featuredMemes}/>
+          <FeaturedMemesSection featuredMemes={featuredMemes} />
           <CreatorsSection topCreators={topCreators} />
           <NewsletterSection />
         </div>
