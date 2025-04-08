@@ -41,10 +41,10 @@ Este projeto é uma aplicação React desenvolvida como parte de uma atividade a
 ## 💡 Descrição dos Componentes Criados
 
 - **Componente Header**: Responsável por exibir o cabeçalho da aplicação, incluindo o título e a navegação.
-- **Componente Footer**: Exibe informações de rodapé, como direitos autorais.
-- **Componente Card**: Apresenta informações em um formato visual organizado, utilizado para exibir dados dinâmicos.
-- **Componente Form**: Formulário para entrada de dados do usuário, com validação integrada.
-
+- **Hero Section**: Card principal com as informações do meme do dia.
+- **Componente Footer**: Exibe o rodapé da aplicação com informações de copyright e links úteis.
+- **Componente MemeCard**: Card individual que exibe as informações de um meme, como imagem, título e descrição.
+- **Componente Navbar**: Barra de navegação com links para diferentes seções da aplicação.
 ---
 
 ## 🎯 Decisões de Design Tomadas
