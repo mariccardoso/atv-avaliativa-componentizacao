@@ -87,7 +87,7 @@ export default function Home() {
     title: "Meme do Dia: Quando seu código funciona de primeira",
     description:
       "Este momento raro que todos os desenvolvedores sonham em experimentar!",
-    image: "https://i.imgur.com/vldGJnz.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg2LhzVZlxsaybEJk0sjirkp68Nmrvz4EQcg&s",
     likes: 2452,
     comments: 387,
     author: "SuperCoder",
@@ -173,6 +173,7 @@ export default function Home() {
     },
   ];
 
+  // Dados de navegação
   const navItens = [
     { label: "Home", href: "#", active: true },
     { label: "Trending", href: "#" },
@@ -181,21 +182,68 @@ export default function Home() {
     { label: "Profile", href: "#" },
   ];
 
+  // Recursos premium
+  const premiumFeatures = [
+    "Acesso a memes exclusivos",
+    "Participação em eventos especiais",
+    "Descontos em produtos parceiros",
+    "Badge de criador premium",
+  ]
+
+  // Tags populares
+  const popularTags = [
+    { id: 1, name: "#memes" },
+    { id: 2, name: "#programação" },
+    { id: 3, name: "#humor" },
+    { id: 4, name: "#escola" },
+    { id: 5, name: "#trabalhoremoto" },
+    { id: 6, name: "#games" },
+    { id: 8, name: "#tecnologia" },
+    { id: 10, name: "#criatividade" },
+  ];
+
+  // Dados do rodapé
+  const footerData = [
+    { titulo: "Navegação", links: ["Home", "Trending", "Create", "Categories", "Profile"] },
+    { titulo: "Recursos", links: ["Sobre Nós", "Contato", "Política de Privacidade", "Termos de Serviço"] },
+    { titulo: "Empresa", links: ["Carreiras", "Blog", "Eventos", "Comunidade"] },
+    { titulo: "Legal", links: ["Direitos Autorais", "Marcas Registradas", "Isenção de Responsabilidade"] },
+  ]
+
+  // Links sociais do rodapé
+  const socialLinks = [
+    { id: 1, icon: "📱", url: "#" },
+    { id: 2, icon: "📘", url: "#" },
+    { id: 3, icon: "📸", url: "#" },
+    { id: 4, icon: "🐦", url: "#" },
+  ];
+
+
   return (
     <div className={styles.container}>
-      <Header logo="MemeVerse" />
+      <Header
+        logo="MemeVerse"
+        navItens={navItens}
+      />
       <div className={styles.mainContent}>
         <div className={styles.contentArea}>
-          <HeroSection />
-          <CategoriesSection />
+          <HeroSection memeOfTheDay={memeOfTheDay} />
+          <CategoriesSection categories={categories} />
           <Feed memes={memes} />
           <FeaturedMemesSection featuredMemes={featuredMemes} />
           <CreatorsSection topCreators={topCreators} />
           <NewsletterSection />
         </div>
-        <Sidebar upcomingEvents={upcomingEvents} />
+        <Sidebar 
+          upcomingEvents={upcomingEvents} 
+          premiumFeatures={premiumFeatures} 
+          popularTags={popularTags}
+        />
       </div>
-      <Footer />
+      <Footer 
+        footerData={footerData} 
+        socialLinks={socialLinks} 
+      />
     </div>
   );
 }

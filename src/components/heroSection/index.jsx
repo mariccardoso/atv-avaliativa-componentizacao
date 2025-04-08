@@ -1,18 +1,8 @@
 import styles from "./heroSection.module.css";
 
-const HeroSection = () => {
+const HeroSection = ({memeOfTheDay}) => {
     // Dados para o meme do dia (hero section)
-    const memeOfTheDay = {
-        id: 7,
-        title: "Meme do Dia: Quando seu código funciona de primeira",
-        description:
-            "Este momento raro que todos os desenvolvedores sonham em experimentar!",
-        image: "https://pt.quizur.com/_image?href=https://img.quizur.com/f/img5c22d768d51465.93685599.jpg?lastEdited=1545787246&w=600&h=600&f=webp",
-        likes: 2452,
-        comments: 387,
-        author: "MarianaDev",
-        authorAvatar: "https://avatars.githubusercontent.com/u/158165810?v=4",
-    };
+
     return (
         <section className={styles.heroSection}>
             <div className={styles.heroContent}>

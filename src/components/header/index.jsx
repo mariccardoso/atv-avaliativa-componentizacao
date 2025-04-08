@@ -1,6 +1,6 @@
 import styles from "./header.module.css";
 
-const Header = ({ logo }) => {
+const Header = ({ logo, navItens }) => {
 
   return (
     <header className={styles.header}>
@@ -9,13 +9,11 @@ const Header = ({ logo }) => {
         <span>🌟</span>
       </div>
       <nav className={styles.nav}>
-        <a href="#" className={styles.active}>
-          Home
-        </a>
-        <a href="#">Trending</a>
-        <a href="#">Create</a>
-        <a href="#">Categories</a>
-        <a href="#">Profile</a>
+        {navItens.map((item, index) => (
+          <a key={index} href={item.link} className={styles.navItem}>
+            {item.icon && <span className={styles.icon}>{item.icon}</span>}
+            {item.label}</a>
+          ))}
       </nav>
 
       <div className={styles.userActions}>

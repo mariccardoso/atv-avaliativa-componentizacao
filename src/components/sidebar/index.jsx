@@ -2,7 +2,7 @@ import styles from "./sidebar.module.css";
 import EventCard from "../eventCard/index.jsx"; 
 import TagCloud from "../tagCloud";
 
-const Sidebar = ({upcomingEvents}) => {
+const Sidebar = ({upcomingEvents, premiumFeatures, popularTags}) => {
   return (
     <aside className={styles.sidebar}>
     <div className={styles.sidebarSection}>
@@ -19,17 +19,18 @@ const Sidebar = ({upcomingEvents}) => {
           Desbloqueie recursos exclusivos!
         </h4>
         <ul className={styles.premiumFeatures}>
-          <li>Sem anúncios</li>
-          <li>Uploads ilimitados</li>
-          <li>Ferramentas de edição avançadas</li>
-          <li>Estatísticas detalhadas</li>
+          {premiumFeatures.map((feature, index) => (
+            <li key={index} className={styles.premiumFeature}>
+              {feature}
+            </li>
+          ))}
         </ul>
         <button className={styles.premiumButton}>
           Experimentar Grátis
         </button>
       </div>
     </div>
-    <TagCloud />
+    <TagCloud popularTags={popularTags} />
   </aside>
   );
 };
